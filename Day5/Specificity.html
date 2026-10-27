@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级测试</title>
+    <style>
+        /* 规则1：元素选择器 (0,0,0,1) */
+        a { color: black; }
+
+        /* 规则2：类选择器 (0,0,1,0) */
+        .link { color: green; }
+
+        /* 规则3：多类选择器+子代 (0,0,2,1) */
+        .list > .item .link { color: orange; }
+
+        /* 规则4：ID选择器 (0,1,0,1) */
+        #app a { color: rgb(255, 6, 255); }
+
+        /* 规则5：!important 强制最高 (无视四元组) */
+        .force-red { color: red !important; }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <ul class="list">
+        <!-- 第一个链接 -->
+        <li class="item">
+            <a href="#" class="link">我是链接1</a>
+        </li>
+
+        <!-- 第二个链接 -->
+        <li class="item">
+            <a href="#" class="link force-red">我是链接2</a>
+        </li>
+
+        <!-- 第三个链接：行内样式 -->
+        <li class="item">
+            <a href="#" class="link" style="color: blue;">我是链接3</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
