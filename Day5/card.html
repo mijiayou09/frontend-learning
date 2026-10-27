@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>名片</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+           <h1>贺家豪</h1>
+           <p>前端开发工程师</p>
+           <nav>
+               <ul>
+                   <li><a href="#about">个人简介</a></li>
+                   <li><a href="#skills">技能</a></li>
+                   <li><a href="#contact">联系我</a></li>
+               </ul>
+           </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>关于我</h2>
+                <p>我是一名正在学习前端的大四学生</p>
+                <p>嵌入式太难找了，发现前端挺有意思的</p>
+            </section>
+            <section id="skills">
+                <h2>技能</h2>
+                <table>
+                    <caption>技能清单</caption>
+                    <thead>
+                        <tr>
+                            <th>技能</th>
+                            <th>掌握程度</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>熟练</td>
+                            <td>熟悉HTML5规范，能够编写语义化的HTML代码</td>
+                        </tr>
+                        <tr>
+                            <td>github</td>
+                            <td>初窥门径</td>
+                            <td>会建库，会上传数据，会看基本结构</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td colspan="2">只听说过，还没学</td>
+                        </tr>
+                        <tr>
+                            <td>vscode</td>
+                            <td>熟练</td>
+                            <td>会使用vscode，会使用git,写基本代码</td>
+                        </tr>
+                        <tr>
+                            <td>python</td>
+                            <td colspan="2">不会</td>
+                        </tr>
+                        <tr>
+                            <td>deepseek</td>
+                            <td>熟练</td>
+                            <td>花了我好多钱，QAQ,接了桌宠和QQ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="contact">
+                <h2>联系我</h2>
+                <form action="/submit" method="post">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email" required>
+                    <p>意向岗位：</p>
+                    <input type="radio" id="qiandaun" name="job">
+                    <label for="qianduan">前端</label>
+                    <input type="radio" id="qianrushi" name="job" >
+                    <label for="qianrushi">嵌入式</label>
+                    <input type="radio" id="houduan" name="job" >
+                    <label for="houduan">后端</label>
+                    <input type="submit" value="提交">
+                </form>
+            </section>
+        </main>
+        <footer>
+                    </tbody>
+                </table>
+            </section>
+        </main>    
+        <footer>
+            <p>联系方式：hjh@163.com</p>
+            <a href="https://www.baidu.com">百度</a> 
+        </footer>
+    </body>
+</html>
